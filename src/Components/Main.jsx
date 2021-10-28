@@ -103,8 +103,10 @@ const dataMain = [
 export const Main = () => {
   return (
     <>
-      <div className="main">
+     
+        
         <div className="wrapper">
+        <div className="main">
           <h1 className="main__title">Найдено 100 проектов </h1>
           <div className="main__relevance">
             <a href="">Все</a>
@@ -156,8 +158,9 @@ export const Main = () => {
             })}
           </div>
           <h4> <a href="">Еще</a> </h4>
+          </div>
         </div>
-      </div>
+    
     </>
   );
 };

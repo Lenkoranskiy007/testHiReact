@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useRef} from 'react'
 import Vector from '../assets/Group 106.svg'
 import Magnifing from '../assets/MagnifyingGlass.svg'
 import Shoping from '../assets/ShoppingCartSimple.svg'
@@ -18,11 +18,20 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 
 export const Header = () => {
-  const [togle, setTogle] = useState(false)
 
-  return <>   
-  <header className="header">
+
+  const inputEl = useRef();
+
+ 
+ 
+
+  
+  
+  return < >    
+  
+    
   <div className="wrapper">
+  <header ref={inputEl}  className="header">
   <nav className="nav"> 
   <div className="nav__img">
     <img src={Vector} alt="Vector"/>
@@ -54,11 +63,11 @@ export const Header = () => {
      <div className="game"><img src={Game3} alt="Game3"/></div>
    </div>
  </div>
+ </header>
   </div>
-</header>
+
 </>
 }
-
 
 
 
